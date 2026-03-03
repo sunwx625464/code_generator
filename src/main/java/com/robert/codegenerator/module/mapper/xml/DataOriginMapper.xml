@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.robert.codegenerator.module.mapper.DataOriginMapper">
+
+    <resultMap id="BaseResultMap" type="com.robert.codegenerator.module.domain.entity.DataOrigin">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="connectName" column="connect_name" jdbcType="VARCHAR"/>
+            <result property="connectUrl" column="connect_url" jdbcType="VARCHAR"/>
+            <result property="connectUser" column="connect_user" jdbcType="VARCHAR"/>
+            <result property="connectPassword" column="connect_password" jdbcType="VARCHAR"/>
+            <result property="deleted" column="deleted" jdbcType="TINYINT"/>
+            <result property="baseFlag" column="base_flag" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,create_time,update_time,
+        connect_name,connect_url,connect_user,
+        connect_password,deleted,base_flag,
+        type
+    </sql>
+</mapper>
